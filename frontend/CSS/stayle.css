@@ -32,12 +32,7 @@ footer {
   background-color: var(--navy-dark) !important;
 }
 
-/* Summary Cards Explicit CSS Grid */
-.summary-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
-}
+
 
 .brand-icon-box {
   width: 38px;
@@ -68,6 +63,13 @@ footer {
   box-shadow: 0 0 8px #10b981;
 }
 
+
+/* Summary Cards Explicit CSS Grid */
+.summary-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
 
 .stat-card {
   border-radius: 14px;
@@ -132,6 +134,7 @@ footer {
 }
 
 
+/* Table + Empty State */
 .table-card {
   border-radius: 16px;
   background: #ffffff;

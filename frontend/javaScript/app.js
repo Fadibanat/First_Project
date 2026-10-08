@@ -121,6 +121,9 @@ function updateSummaryCards(expenses) {
   maxExpenseEl.textContent = `$${maxExpense.toFixed(2)}`;
 }
 
+
+// create Expense
+
 function createExpenseRow(expense) {
   const tr = document.createElement('tr');
 
@@ -153,6 +156,10 @@ function createExpenseRow(expense) {
 
   return tr;
 }
+
+
+
+
 
 function renderTable(expenses) {
   const expenseList = document.querySelector('#expenseList');
@@ -251,6 +258,9 @@ function startEditExpense(id) {
   const editModal = new bootstrap.Modal(document.getElementById('editExpenseModal'));
   editModal.show();
 }
+
+
+
 
 // 9. Save Edit Expense (PUT Request)
 editExpenseForm.addEventListener('submit', async function (e) {
